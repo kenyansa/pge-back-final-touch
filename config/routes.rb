@@ -4,12 +4,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "pages#index"
 
-  namespace :api do
-    namespace :v1 do
-      resources :projects, param: :id
-      resources :reviews, only: [:create, :update, :destroy]
-    end
-  end
+  resources :projects, param: :id
+  resources :reviews, only: [:create, :update, :destroy]
+
 
   get '*path', to: 'pages#index', via: :all #it routes all requests that aren't for existing paths predifined in our API back to the index path. 
 end
