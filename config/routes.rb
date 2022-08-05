@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :projects, param: :id
-      resources :reviews, only [:create, :update, :destroy]
+      resources :reviews, only: [:create, :update, :destroy]
     end
   end
 
