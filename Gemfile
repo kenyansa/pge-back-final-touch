@@ -7,10 +7,10 @@ ruby "2.7.4"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
 # Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.4"
 
 #gem pg
-gem 'pg', '~> 1.4', '>= 1.4.2'
+# gem 'pg', '~> 1.4', '>= 1.4.2'
 
 #AMS
 gem 'active_model_serializers', '~> 0.10.2'
